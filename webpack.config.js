@@ -22,7 +22,14 @@ module.exports = {
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader']
-      }
+      }, 
+      {
+        test: /\.(png|svg|jpg|jpeg|gif|webp)$/i,
+        type: 'asset/resource', // This automatically handles image files
+        generator: {
+          filename: 'images/[hash][ext][query]' // Defines output file naming
+        }
+      },
     ]
   },
   plugins: [

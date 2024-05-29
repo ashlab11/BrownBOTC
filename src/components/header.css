@@ -1,0 +1,48 @@
+.header-container {
+    background-color: #25102F;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    height: 10vh;
+}
+
+.brownlogo {
+    position: absolute;
+    top: -0.5%;
+    width: 10%;
+}
+
+.brownlogo img {
+    width: 100%;
+}
+
+.botctext {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+}
+
+.botctext img {
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.searchbar {
+    position: absolute;
+    top: -1%;
+    width: 6%;
+    right: 5%;
+}
+
+.searchbar img {
+    display: block;
+    width: 100%;
+    
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
