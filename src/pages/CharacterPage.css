@@ -1,0 +1,21 @@
+.character-page-container {
+    margin-top: 10vh; /* Adjust this value to push the container below the header */
+    min-height: 90vh; /* This gives minimum height but adjusts based on content */
+    padding: 20px; /* Padding for inner spacing */
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px; /* Provide some spacing below the header */
+}
+
+.character-image {
+    width: 100%; /* Full width or adjust as necessary */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.character-image img {
+    width: 100%; /* Image will fill the container */
+    height: auto; /* Maintain aspect ratio */
+    background-color: none;
+}
