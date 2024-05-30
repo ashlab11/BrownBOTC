@@ -1,0 +1,36 @@
+.character-page-container {
+    width: 100vw;
+    margin-top: 10vh; /* Adjust this value to push the container below the header */
+    font-family: "english", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 2.75em;
+    color: #991014;
+
+}
+
+h2 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+.character-image {
+    width: 100%; /* Full width or adjust as necessary */
+    top: 30%;
+    left: 10%;
+
+}
+
+.character-image img {
+    display: block;
+    width: 34%; /* Image will fill the container */
+    height: auto; /* Maintain aspect ratio */ 
+}
