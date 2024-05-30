@@ -4,7 +4,6 @@ import PlayerPage from './pages/PlayerPage.js';
 import GamePage from './pages/GamePage.js';
 import ScriptPage from './pages/ScriptPage.js';
 
-
 import React, {useState} from 'react';
 import './app.css';
 
@@ -18,9 +17,23 @@ function App() {
   const [currentGame, setCurrentGame] = useState(false);
   const [currentScript, setCurrentScript] = useState(false);
 
+  async function getCharacterImageURL(characterURL) {
+    try {
+      const response = await fetch(characterURL);
+      const html = await response.text();
+      const match = html.match(/class="fullImageLink".*?href="([^"]*)"/);
+      console.log(match ? match[1] : "No match found");
+      return match ? match[1] : null;
+    } catch (error) {
+      console.error('Failed to fetch character image URL:', error);
+      return null;
+    }
+  }
+
+
   const pageInfo = {
-    name: "Acrobat",
-    imageUrl: "https://wiki.bloodontheclocktower.com/images/b/b5/Icon_acrobat.png"
+    name: "Assassin",
+    imageUrl: "https://wiki.bloodontheclocktower.com/images/4/49/Icon_assassin.png"
   };
 
   const playerInfo = {
